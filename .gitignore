@@ -431,3 +431,6 @@ test-report.xml
 
 .cache
 temp
+
+# Extra
+db/app.db
