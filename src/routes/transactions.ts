@@ -12,12 +12,12 @@ export async function transactionsRoutes(app: FastifyInstance) {
     },
     async (req) => {
       const { sessionId } = req.cookies
-      const transaction = await knex('transactions')
+      const transactions = await knex('transactions')
         .where('session_id', sessionId)
         .select('*')
 
       return {
-        transaction,
+        transactions,
       }
     },
   )
