@@ -1,0 +1,177 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2023-08-12T01:13:55.081Z",
+    "__export_source": "insomnia.desktop.app:v2023.4.0",
+    "resources": [
+        {
+            "_id": "req_7caa71b17ae748f7b1d51aae99e255b9",
+            "parentId": "fld_612a9fc2b2be4832b8cff10032e9338b",
+            "modified": 1691646145813,
+            "created": 1691115308388,
+            "url": "{{ _.baseUrl }}/transactions",
+            "name": "Create transaction",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"title\": \"Visto\",\n\t\"amount\": 300,\n\t\"type\": \"debit\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1691115308388,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_612a9fc2b2be4832b8cff10032e9338b",
+            "parentId": "wrk_32a91bb650a1449283a8293fd6446578",
+            "modified": 1691115109840,
+            "created": 1691115109840,
+            "name": "Transactions",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1691115109840,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_32a91bb650a1449283a8293fd6446578",
+            "parentId": null,
+            "modified": 1691115086743,
+            "created": 1691115086743,
+            "name": "ignite Node.js API REST",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_482c1a8325624c1d8199cac352c88f6a",
+            "parentId": "fld_612a9fc2b2be4832b8cff10032e9338b",
+            "modified": 1691643103224,
+            "created": 1691643091241,
+            "url": "{{ _.baseUrl }}/transactions",
+            "name": "List transaction",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1688885387378.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e2cd0fe6567c4452bb57c954ed6ddfac",
+            "parentId": "fld_612a9fc2b2be4832b8cff10032e9338b",
+            "modified": 1691646165585,
+            "created": 1691643481236,
+            "url": "{{ _.baseUrl }}/transactions/f5501257-cbd4-49d0-b8a0-e788f007333a",
+            "name": "Get transaction",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1687770426873.375,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d0e3a8728e72442ab50c2d038b3ed696",
+            "parentId": "fld_612a9fc2b2be4832b8cff10032e9338b",
+            "modified": 1691643666738,
+            "created": 1691643660010,
+            "url": "{{ _.baseUrl }}/transactions/summary",
+            "name": "Get summary",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1687212946620.9375,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_c05b9af9eedeff96748574bf6a433ac47f4202fc",
+            "parentId": "wrk_32a91bb650a1449283a8293fd6446578",
+            "modified": 1691115231556,
+            "created": 1691115086746,
+            "name": "Base Environment",
+            "data": {
+                "baseUrl": "http://localhost:3333"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "baseUrl"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1691115086746,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_c05b9af9eedeff96748574bf6a433ac47f4202fc",
+            "parentId": "wrk_32a91bb650a1449283a8293fd6446578",
+            "modified": 1691646526582,
+            "created": 1691115086748,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "env_b8f4d2cb43344ab98a6867cf362e81fc",
+            "parentId": "env_c05b9af9eedeff96748574bf6a433ac47f4202fc",
+            "modified": 1691115275657,
+            "created": 1691115236999,
+            "name": "New Environment",
+            "data": {
+                "baseUrl": "http://localhost:3333"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "baseUrl"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1691115236999,
+            "_type": "environment"
+        }
+    ]
+}
