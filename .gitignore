@@ -408,6 +408,7 @@ Temporary Items
 .env.test
 dist
 cache.env
+build
 
 # Environment
 .env
@@ -432,5 +433,5 @@ test-report.xml
 .cache
 temp
 
-# Extra
-db/app.db
+# Database
+db/*.db
