@@ -435,3 +435,4 @@ temp
 
 # Database
 db/*.db
+.vercel
